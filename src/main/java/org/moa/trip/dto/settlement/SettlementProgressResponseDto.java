@@ -1,4 +1,4 @@
-package org.moa.trip.dto.expense;
+package org.moa.trip.dto.settlement;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,15 +7,16 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExpenseResponseDto {
-    private Long expenseId;
+public class SettlementProgressResponseDto {
+    private String expenseName;
     private LocalDateTime expenseDate;
-    private BigDecimal shareAmount;
-    private Boolean received;
-    private String status;
+    private BigDecimal amount;
+    private List<String> names;
+    private List<String> statuses;
 }
