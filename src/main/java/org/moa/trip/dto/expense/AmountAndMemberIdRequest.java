@@ -6,16 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExpenseCreateRequestDto {
+public class AmountAndMemberIdRequest {
     private Long memberId;
-    private Long tripId;
     private BigDecimal amount;
-    private String expenseName;
-    private List<AmountAndMemberIdRequest> expenses;
 }
