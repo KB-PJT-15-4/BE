@@ -3,8 +3,6 @@ package org.moa.global.account.entity;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import org.moa.member.type.Bank;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -16,16 +14,13 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account {
-
+public class PaymentRecord {
+	private Long recordId;
 	private Long accountId;
-
 	private Long memberId;
-	private String accountNumber;
-	private String accountPassword;
-	private Bank bank;
-	private BigDecimal balance;
-	private Boolean isActive;
-	private LocalDateTime createdAt;
-	private LocalDateTime updatedAt;
+
+	private String paymentName;
+	private BigDecimal paymentPrice;
+	private LocalDateTime paymentDate;
+	private String paymentLocation;
 }
