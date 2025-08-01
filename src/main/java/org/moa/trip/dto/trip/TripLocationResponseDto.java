@@ -1,18 +1,18 @@
-package org.moa.trip.entity;
+package org.moa.trip.dto.trip;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.moa.trip.type.Location;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
-@Getter
-@Builder
-@ToString
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-public class TripLocation {
-    private Long locationId;
+@NoArgsConstructor
+@Builder
+public class TripLocationResponseDto {
     private Location locationName;
     private BigDecimal latitude;
     private BigDecimal longitude;
