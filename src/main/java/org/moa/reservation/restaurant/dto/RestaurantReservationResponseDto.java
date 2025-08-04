@@ -9,10 +9,12 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AvailableTimeResponseDto {
+public class RestaurantReservationResponseDto {
+    private Long reservationId;
+    private Long restId;
+    private String restName;
+    private String date;
     private String time;
-    private Long restTimeId;
-    private int maxNum;
-    private int reservedNum;
-    private int availableNum;
+    private Integer resNum;
+    private String status;
 }
