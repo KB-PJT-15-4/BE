@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class AuthResultDto {
+public class TokenRefreshResponseDto {
 	private String accessToken;
-	private String refreshToken;  // Cookie로 전송될 예정
-	private UserInfoDto user;
-	private Long expiresIn;  // Access Token 만료 시간 (초)
+	private Long expiresIn;  // 초 단위
 }
