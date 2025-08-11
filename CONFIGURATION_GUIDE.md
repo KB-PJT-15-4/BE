@@ -1,5 +1,18 @@
 # 🔧 MOA 프로젝트 설정 파일 가이드
 
+## ⚠️ 중요: Git 설정 관리
+
+### application.properties 파일 관리
+- **application.properties**는 `.gitignore`에 추가되어 Git에 추적되지 않습니다
+- 로컬 설정은 각자 환경에 맞게 설정해야 합니다
+- **application.properties.example** 파일을 복사하여 사용하세요:
+  ```bash
+  cp src/main/resources/application.properties.example src/main/resources/application.properties
+  # 이후 본인 환경에 맞게 수정
+  ```
+
+---
+
 ## 📋 환경별 설정 구조
 
 ### 1. 로컬 개발 환경 (Docker 사용 X)
